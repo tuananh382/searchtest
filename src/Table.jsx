@@ -1,17 +1,17 @@
 
 const Table = ({ data }) => {
     return (
-      <table>
+      <div className="tabless">
         <div className="tables">
           {data.map((item) => (
-            <tr key={item.id}>
+            <div className="tr" key={item.id}>
               <img src={item.img}></img>
               <text>{item.first_name}</text>
-            </tr>
+            </div>
           ))}
           
         </div>
-      </table>
+      </div>
     );
   };
   
